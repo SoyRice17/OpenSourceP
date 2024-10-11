@@ -1,15 +1,16 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"strings"
+	"os"
 )
 
 func main() {
-	var foods string = "국?, 비빔?, 볶음?"
-	var replacer *strings.Replacer = strings.NewReplacer("?", "밥")
-	//= replacer := strings.NewReplacer("?", "밥")
-
-	fmt.Println(foods)
-	fmt.Println(replacer.Replace(foods))
+	reader := bufio.NewReader(os.Stdin)
+	// = var reader *bufio.Reader = bufio.NewReader(os.Stdin)
+	fmt.Print("이름을 입력하세요: ")
+	name, err := reader.ReadString('\n')
+	fmt.Println(name)
+	fmt.Println(err)
 }
