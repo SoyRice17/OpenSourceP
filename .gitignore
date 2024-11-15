@@ -4,3 +4,5 @@ gitLearn/Password.txt
 go.mod
 *.exe
 main
+go.sum
+*.txt
