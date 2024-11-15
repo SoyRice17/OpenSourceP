@@ -19,7 +19,8 @@ func main() {
 	// fmt.Println(dates)                       // 배열 자체
 	// fmt.Printf("%#v\n", dates) // 배열 리터럴 (리터럴이란? 소스코드에 직접 표현되는 값)
 
-	for i := 0; i < len(dates); i++ {
-		fmt.Println(i, dates[i])
+	//for i := 0; i < len(dates); i++ { // 안전함ss
+	for i, v := range dates { // 파이썬 enumerate와 유사함
+		fmt.Println(i, v)
 	}
 }
