@@ -15,5 +15,11 @@ func main() {
 		time.Unix(1457894000, 0),
 		time.Unix(1657894000, 0),
 	}
-	fmt.Println(dates[0], dates[1], dates[2])
+	// fmt.Println(dates[0], dates[1], dates[2]) // 배열 원소들
+	// fmt.Println(dates)                       // 배열 자체
+	// fmt.Printf("%#v\n", dates) // 배열 리터럴 (리터럴이란? 소스코드에 직접 표현되는 값)
+
+	for i := 0; i < len(dates); i++ {
+		fmt.Println(i, dates[i])
+	}
 }
